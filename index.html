@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/todo_app.css">
+    <title>Frontend Mentor | Todo app</title>
+    <script src="./scripts/todo_app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="wrapper">
+            <header>
+                <h1>Todo App</h1>
+                <button class="btn theme-btn light"><img src="./images/icon-moon.svg" alt="moon svg"></button>
+            </header>
+            <form>
+                <span class="round"></span>
+                <input type="text" id="todo-input" placeholder="Create a new todo / Crea una nueva tarea">
+                <button class="add-todo">+</button>
+            </form>
+            <div class="todo-container">
+                <ul class="todos">
+                </ul>
+                <div class="actions">
+                    <p class="left-items"><span id="count">0</span> items left</p>
+                    <a href="#" class="clear-completed-btn">Clear Completed<br>Borrar Completadas</a>
+                </div>
+            </div>
+            <div class="filters">
+                <a href="#" class="filter-btns all active">All<br>Todas</a>
+                <a href="#" class="filter-btns live">Active<br>Activas</a>
+                <a href="#" class="filter-btns completed-btn">Completed<br>Completadas</a>
+            </div>
+            <p class="drag-help-info">Drag and drop to reorder list<br>Arrastra y suelta para ordenar</p>
+        </section>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Eduardo Ferrán</a>.
+      </div>
+</body>
+
+</html>
